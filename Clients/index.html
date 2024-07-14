@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <!-- Form for adding new todos -->
+    <form id="todo-form">
+      <input type="text" id="description" placeholder="Enter a new todo...">
+      <button type="submit">Add Todo</button>
+    </form>
+    <!-- List of todos -->
+    <ul id="todo-list">
+      <!-- Todo items will be dynamically added here -->
+    </ul>
+    <!-- Modal for editing todos -->
+    <div id="edit-form-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="edit-form">
+            <label for="edit-description">Edit Description:</label>
+            <input type="text" id="edit-description" name="edit-description" />
+            <button type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+      
+  </div>
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
